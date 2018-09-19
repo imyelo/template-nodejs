@@ -1,0 +1,32 @@
+{
+  "name": "@yelo/template-nodejs",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "repository": {
+    "url": "imyelo/template-nodejs",
+    "type": "git"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "ava test/*.js",
+    "release": "np"
+  },
+  "author": "yelo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imyelo/template-nodejs/issues"
+  },
+  "homepage": "https://github.com/imyelo/template-nodejs#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "lint-staged": "^7.2.2",
+    "np": "^3.0.4",
+    "prettier": "^1.14.3",
+    "sao": "^0.22.17"
+  }
+}

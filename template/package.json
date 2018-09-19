@@ -1,0 +1,29 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "url": "imyelo/<%= name %>",
+    "type": "git"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "ava test/*.js",
+    "release": "np"
+  },
+  "author": "yelo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imyelo/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/imyelo/<%= name %>#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "lint-staged": "^7.2.2",
+    "np": "^3.0.4",
+    "prettier": "^1.14.3"
+  }
+}
