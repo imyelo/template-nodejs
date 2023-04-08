@@ -1,6 +1,0 @@
-{
-  "*.{md,js,ts,json}": [
-    "prettier-eslint --write",
-    "git add"
-  ]
-}

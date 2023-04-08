@@ -19,6 +19,7 @@
     "prebuild": "npm run clean",
     "build": "tsc -p ./tsconfig.esm.json",
     "test": "ava",
+    "prepare": "husky install",
     "release": "np"
   },
   "engines": {
@@ -39,15 +40,15 @@
     "@yelo/prettier-config": "^0.0.1",
     "@yelo/tsconfig": "^0.2.0",
     "ava": "^5.2.0",
-    "eslint": "^8.36.0",
+    "eslint": "^8.38.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "np": "^7.6.3",
-    "prettier": "^2.8.4",
+    "lint-staged": "^13.2.1",
+    "np": "^7.7.0",
+    "prettier": "^2.8.7",
     "prettier-eslint-cli": "^6.0.1",
-    "rimraf": "^4.4.0",
+    "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.4"
   },
   "ava": {
     "extensions": {
@@ -62,10 +63,10 @@
     ]
   },
   "prettier": "@yelo/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "lint-staged": {
+    "*.{md,js,ts,json}": [
+      "prettier-eslint --write"
+    ]
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"

@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": ["@yelo/eslint-config"],
+  "rules": {
+    "no-await-in-loop": "off"
+  },
+  "ignorePatterns": ["**/node_modules/*", "**/template/*"]
+}

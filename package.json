@@ -14,6 +14,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "test": "ava test/*.js",
+    "prepare": "husky install",
     "release": "np"
   },
   "author": "yelo",
@@ -22,11 +23,22 @@
     "url": "https://github.com/imyelo/template-nodejs/issues"
   },
   "homepage": "https://github.com/imyelo/template-nodejs#readme",
+  "prettier": "@yelo/prettier-config",
+  "lint-staged": {
+    "*.{md,js,ts,json}": [
+      "prettier-eslint --write"
+    ]
+  },
   "devDependencies": {
+    "@yelo/eslint-config": "^0.1.0",
+    "@yelo/prettier-config": "^0.0.1",
     "ava": "^5.2.0",
-    "lint-staged": "^13.1.2",
+    "eslint": "^8.38.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "np": "^7.7.0",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
+    "prettier-eslint-cli": "^6.0.1",
     "sao": "^1.7.1"
   }
 }

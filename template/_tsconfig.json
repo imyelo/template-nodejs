@@ -3,5 +3,5 @@
   "compilerOptions": {
     "noEmit": true
   },
-  "include": [".eslintrc.cjs", "tsconfig.json", "src", "test"]
+  "include": ["_eslintrc.cjs", "tsconfig.json", "src", "test"]
 }
